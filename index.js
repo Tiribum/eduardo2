@@ -17,7 +17,7 @@ statusBot.once('ready', () => {
         status: 'online', // Opções: 'online', 'idle', 'dnd' (Não Perturbe), 'invisible'
         activities: [{
             name: 'Funcionando', // Coloque o texto que quiser aqui
-            type: ActivityType.Playing   // Opções: Playing, Streaming, Listening, Watching, Competing
+            type: ActivityType.Watching   // Opções: Playing, Streaming, Listening, Watching, Competing
         }]
     });
 });
