@@ -12,9 +12,13 @@ const statusBot = new Client({
 statusBot.once('ready', () => {
     console.log(`[Status Bot] Online e conectado como ${statusBot.user.tag}`);
     
-    // Altere 'Nome da sua Atividade' para o que deseja exibir no perfil
-    statusBot.user.setActivity('Status: Funcionando.', { 
-        type: ActivityType.Playing 
+    // Configuração fácil do Status e da Atividade:
+    statusBot.user.setPresence({
+        status: 'online', // Opções: 'online', 'idle', 'dnd' (Não Perturbe), 'invisible'
+        activities: [{
+            name: 'SKLK Clan App', // Coloque o texto que quiser aqui
+            type: ActivityType.Playing   // Opções: Playing, Streaming, Listening, Watching, Competing
+        }]
     });
 });
 
