@@ -16,7 +16,7 @@ statusBot.once('ready', () => {
     statusBot.user.setPresence({
         status: 'online', // Opções: 'online', 'idle', 'dnd' (Não Perturbe), 'invisible'
         activities: [{
-            name: 'SKLK Clan App', // Coloque o texto que quiser aqui
+            name: 'Funcionando', // Coloque o texto que quiser aqui
             type: ActivityType.Playing   // Opções: Playing, Streaming, Listening, Watching, Competing
         }]
     });
