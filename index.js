@@ -13,7 +13,7 @@ statusBot.once('ready', () => {
     console.log(`[Status Bot] Online e conectado como ${statusBot.user.tag}`);
     
     // Altere 'Nome da sua Atividade' para o que deseja exibir no perfil
-    statusBot.user.setActivity('teste', { 
+    statusBot.user.setActivity('Eduardo agora esta operando 100%', { 
         type: ActivityType.Playing 
     });
 });
