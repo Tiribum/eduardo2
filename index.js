@@ -14,9 +14,9 @@ statusBot.once('ready', () => {
     
     // Configuração fácil do Status e da Atividade:
     statusBot.user.setPresence({
-        status: 'online', // Opções: 'online', 'idle', 'dnd' (Não Perturbe), 'invisible'
+        status: 'dnd', // Opções: 'online', 'idle', 'dnd' (Não Perturbe), 'invisible'
         activities: [{
-            name: 'Funcionando', // Coloque o texto que quiser aqui
+            name: 'Em manutenção - Sem previsão', // Coloque o texto que quiser aqui
             type: ActivityType.Watching   // Opções: Playing, Streaming, Listening, Watching, Competing
         }]
     });
