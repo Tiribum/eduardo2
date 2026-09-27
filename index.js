@@ -15,7 +15,7 @@ statusBot.once('clientReady', () => {
     statusBot.user.setPresence({
         status: 'idle', // 'online' (verde) | 'idle' (amarelo) | 'dnd' (vermelho) | 'invisible' (invisível)
         activities: [{
-            name: 'a', // Escreva o que quiser aqui
+            name: 'funcionando', // Escreva o que quiser aqui
             type: ActivityType.Playing // Playing (Jogando) | Streaming (Transmitindo) | Listening (Ouvindo) | Watching (Assistindo) | Competing (Competindo)
         }]
     });
