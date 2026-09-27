@@ -13,9 +13,9 @@ statusBot.once('clientReady', () => {
     console.log(`[Status Bot] Online e conectado como ${statusBot.user.tag}`);
     
     statusBot.user.setPresence({
-        status: 'idle', // 'online' (verde) | 'idle' (amarelo) | 'dnd' (vermelho) | 'invisible' (invisível)
+        status: 'online', // 'online' (verde) | 'idle' (amarelo) | 'dnd' (vermelho) | 'invisible' (invisível)
         activities: [{
-            name: 'funcionando', // Escreva o que quiser aqui
+            name: 'Funcionando', // Escreva o que quiser aqui
             type: ActivityType.Playing // Playing (Jogando) | Streaming (Transmitindo) | Listening (Ouvindo) | Watching (Assistindo) | Competing (Competindo)
         }]
     });
