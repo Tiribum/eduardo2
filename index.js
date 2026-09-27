@@ -9,15 +9,15 @@ const statusBot = new Client({
     intents: [GatewayIntentBits.Guilds] 
 });
 
-statusBot.once('ready', () => {
+// Mudamos de 'ready' para 'clientReady' para funcionar perfeitamente na versão atual
+statusBot.once('clientReady', () => {
     console.log(`[Status Bot] Online e conectado como ${statusBot.user.tag}`);
     
-    // Configuração fácil do Status e da Atividade:
     statusBot.user.setPresence({
-        status: 'idle', // Opções: 'online', 'idle', 'dnd' (Não Perturbe), 'invisible'
+        status: 'online',
         activities: [{
-            name: 'Em manutenção - Sem previsão', // Coloque o texto que quiser aqui
-            type: ActivityType.Watching   // Opções: Playing, Streaming, Listening, Watching, Competing
+            name: 'Nome da sua Atividade', // Coloque o nome do seu jogo/atividade aqui
+            type: ActivityType.Playing   
         }]
     });
 });
